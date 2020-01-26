@@ -1,0 +1,150 @@
+body {
+    font-family: 'lato', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Quicksand', sans-serif, serif;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+header, footer{
+    background-color: #04304C;
+    color: #6CB2D1;
+    text-align: center;
+    padding: 5px;
+    margin: 10px 0px;
+}
+
+header {
+    margin-bottom: 0;
+    border-radius: 5px 5px 0 0;
+}
+
+main {
+    margin: 1rem;
+}
+
+main h1 {
+    font-weight: bold;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+.nameSite{
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+}
+
+.bottomBorder {
+    border-bottom: steelblue solid 1px;
+}
+
+
+nav {
+    background-color: #6CB2D1;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    display: block;
+    color: #04304C;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    /* font-size: 0.95rem; */
+}
+
+nav a:hover {
+    background-color: #F4EF89;
+    font-weight: bold;
+}
+
+body.pageHome a.pageHome, body.pageTarget a.pageTarget,
+body.pageColor a.pageColor, body.pageTypo a.pageTypo {
+    background-color:#dc8e54;
+    color: #fff;
+}
+
+.logo {
+    width: 10rem;
+    height: auto;
+    /* float: left; */
+    margin: .7rem;
+}
+
+
+
+span {
+    font-weight: bold;
+}
+
+
+picture img {
+    object-fit: cover;
+    width: 12rem;
+    height: 12rem;
+}
+
+.personaDetail li {
+    font-size: 1.1rem;
+}
+
+.colors {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+.latofont span {
+    font-weight: bold;
+}
+
+article .size18{
+    font-size : 18px;
+}
+
+article .size16{
+    font-size: 16px;
+}
+
+.quicksandFont span {
+    color: #455368;
+    font-weight: bold;
+}
+
+footer {
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: burlywood;
+}
+
+footer a:hover {
+    color: rgb(245, 241, 0);
+    font-weight: bold;
+}
+
+footer a:visited{
+    color: burlywood;
+}
