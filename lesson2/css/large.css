@@ -6,4 +6,8 @@
     .content {
         max-width: 63rem;
     }
+
+    .last {
+        grid-column: span 1;
+    }
 }
