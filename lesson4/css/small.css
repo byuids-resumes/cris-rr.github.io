@@ -21,13 +21,11 @@ header {
 
 
 .subHeader {
-    /* flex: 80%; */
     text-align: center;
 }
 
 .subHeader h1 {
     margin: 1rem 1rem 0;
-    /* margin-left: 1rem; */
     font-size: 3rem;
 }
 
@@ -64,28 +62,26 @@ nav ul {
 
 nav li a {
     display: block;
-    color: #455368;
-    font-weight: bold;
+    color: #000;
     text-align: center;
     padding: 0.75rem;
     text-decoration: none;
-    /* font-size: 18px; */
 }
 
 nav a:hover {
     background-color: #8D8D92;
-    color: #455368;
+    color: #FFF;
 
 }    
 
 body.pageHome a.pageHome, body.pagePreston a.pagePreston {
     background-color:#DC8E54;
     color: #000;
+    font-weight: bold;
 }
 
 main h2 {
     text-align: center;
-    /* font-weight: bolder; */
 }
 
 .placeholder{
@@ -94,7 +90,6 @@ main h2 {
     margin: 0.5rem;
     min-height: 3rem;
     padding: 0.5rem;
-    /* text-align: center; */
     line-height: 3rem;
     border-radius: 10px;
     font-size: 1.125rem;
