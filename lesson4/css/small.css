@@ -1,0 +1,125 @@
+body {
+    background-color: #fff;
+    font-family: 'lato', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Quicksand', sans-serif, serif;
+}
+
+header, footer{
+    background-color: #455368;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.subHeader {
+    /* flex: 80%; */
+    text-align: center;
+}
+
+.subHeader h1 {
+    margin: 1rem 1rem 0;
+    /* margin-left: 1rem; */
+    font-size: 3rem;
+}
+
+.logo {
+    width: 8rem;
+    height: auto;
+    border: #fff solid 5px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+nav {
+    background-color: #93b7be;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menubar li:first-child {
+    display: block;
+}
+
+.menubar li {
+    display: block;
+}
+
+.hide li {
+    display: none;
+}
+
+nav li a {
+    display: block;
+    color: #455368;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+    /* font-size: 18px; */
+}
+
+nav a:hover {
+    background-color: #8D8D92;
+    color: #455368;
+
+}    
+
+body.pageHome a.pageHome, body.pagePreston a.pagePreston {
+    background-color:#DC8E54;
+    color: #000;
+}
+
+main h2 {
+    text-align: center;
+    /* font-weight: bolder; */
+}
+
+.placeholder{
+    border: #8D8D92 dashed 0.5px;
+    background-color: #f0f0f0;
+    margin: 0.5rem;
+    min-height: 3rem;
+    padding: 0.5rem;
+    /* text-align: center; */
+    line-height: 3rem;
+    border-radius: 10px;
+    font-size: 1.125rem;
+}
+
+footer {
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #DC8E54;
+    font-weight: bold;
+}
+
+footer a:visited{
+    color: burlywood;
+}
