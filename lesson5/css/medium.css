@@ -1,0 +1,46 @@
+@media only screen and (min-width: 47em) {
+    .menubar {
+        display: flex;
+    }
+    
+    .menubar li {
+            display: block;
+            flex: 1 1 100%;
+    }
+    
+    .menubar li:first-child {
+        display: none;
+    }
+
+    .forecast{
+        display: flex;
+    }
+
+    .history img{
+        max-width: 400px;
+        object-fit: cover;
+        float: right;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        padding: 0.5rem;
+    }
+
+    .map {
+        display: block;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    .map {
+        flex: 1 1 100%;
+    }
+
+    .info {
+        flex: 1 1 100%
+    }
+}

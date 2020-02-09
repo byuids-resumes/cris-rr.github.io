@@ -1,0 +1,291 @@
+body {
+    background-color: #fff;
+    font-family: 'lato', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Quicksand', sans-serif, serif;
+}
+
+.banner {
+    /* border: #FFF solid 5px; */
+    background-color: #DC8E54;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.2rem 1.8rem;
+    font-size: 1.1rem;
+    /* text-shadow: 0.5px 0.5px #8D8D92; */
+}
+
+header, footer{
+    background-color: #455368;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.subHeader {
+    text-align: center;
+}
+
+.subHeader h1 {
+    margin: 1rem 1rem 0;
+    font-size: 3rem;
+}
+
+.logo {
+    width: 8rem;
+    height: auto;
+    border: #fff solid 5px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+nav {
+    background-color: #93b7be;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menubar li:first-child {
+    display: block;
+}
+
+.menubar li {
+    display: block;
+}
+
+.hide li {
+    display: none;
+}
+
+nav li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #8D8D92;
+    color: #FFF;
+
+}    
+
+body.pageHome a.pageHome, body.pagePreston a.pagePreston {
+    background-color:#DC8E54;
+    color: #000;
+    font-weight: bold;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.hero {
+    padding: 0.5rem;
+    position: relative;
+    /* margin-bottom: 1rem; */
+}
+
+.hero figure {
+    margin: 0 auto;
+}
+
+.hero figure img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 300px;
+}
+
+.summary {
+    background: radial-gradient(#455368, #000);
+    /* background-color: #DC8E54; */
+    /* background-color: #FFF; */
+    border: #fff solid 2px;
+    opacity: 0.8;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 1rem;
+    color: #FFF;
+    box-shadow: 10px 10px 25px rgb(29, 31, 32);
+    min-width: 200px;
+    
+}
+
+.summary h3 {
+    text-align: center;
+    margin: 0 0 0.5rem;
+    border-bottom: 1px solid #FFF;
+}
+
+.row {
+    /* text-align: center; */
+    display: flex;
+    padding: 0.2rem;    
+}
+
+.left {
+    text-align: right;
+    flex: 1 1 100%;
+    padding-right: 0.5rem;
+}
+
+.right {
+    text-align: left;
+    flex: 1 1 100%;
+}
+
+.fiveDaysForecast {
+    text-align: center;
+    /* margin-bottom: 1rem; */
+    padding: 0.5rem 0;
+}
+
+.fiveDaysForecast h3 {
+    margin-top: 0;
+}
+
+.forecast {
+    
+    display: none;
+    flex-direction: row;
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+    /* padding: 0.5rem; */
+    border: #455368 solid 1px;
+}
+
+.column{
+    flex: 1 1 100%;
+    /* padding: 0.5rem 0; */
+    border-left: #455368 solid 1px;
+}
+
+.forecast div:first-child {
+    border-left: 0;
+}
+
+.day {
+    background-color: #93b7be;
+    display: block;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.column img {
+    padding-top: 0.5rem;
+    width: 35%;
+}
+
+.temp {
+    display: block;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.history {
+    margin: 1rem;
+    background-color: #93b7be;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.history img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.history h2 {
+    font-weight: bold;
+    text-align: left;
+}
+
+.contact {
+    clear: both;
+    margin: 1rem;
+    background-color: #93b7be;
+    padding: 1rem;
+}
+
+.map {
+    display: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.map img {
+    display: block;
+    max-width: 100%;
+    /* min-width: 50%; */
+    margin: 0 auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.info span {
+    display: block;
+    padding: 1px 0;
+
+}
+
+.name {
+    font-weight: bold;
+}
+
+.phone {
+    margin-top: 1rem;
+}
+
+.social {
+    padding: 1.5rem 0;
+}
+
+
+.social a img {
+    max-width: 70%;
+}
+
+footer {
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #DC8E54;
+    font-weight: bold;
+}
+
+footer a:visited{
+    color: burlywood;
+}
