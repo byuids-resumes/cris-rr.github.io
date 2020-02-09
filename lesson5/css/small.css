@@ -8,13 +8,11 @@ h1, h2 {
 }
 
 .banner {
-    /* border: #FFF solid 5px; */
     background-color: #DC8E54;
     text-align: center;
     font-weight: bold;
     padding: 0.2rem 1.8rem;
     font-size: 1.1rem;
-    /* text-shadow: 0.5px 0.5px #8D8D92; */
 }
 
 header, footer{
@@ -97,7 +95,6 @@ main h2 {
 .hero {
     padding: 0.5rem;
     position: relative;
-    /* margin-bottom: 1rem; */
 }
 
 .hero figure {
@@ -112,8 +109,6 @@ main h2 {
 
 .summary {
     background: radial-gradient(#455368, #000);
-    /* background-color: #DC8E54; */
-    /* background-color: #FFF; */
     border: #fff solid 2px;
     opacity: 0.8;
     position: absolute;
@@ -133,7 +128,6 @@ main h2 {
 }
 
 .row {
-    /* text-align: center; */
     display: flex;
     padding: 0.2rem;    
 }
@@ -151,7 +145,6 @@ main h2 {
 
 .fiveDaysForecast {
     text-align: center;
-    /* margin-bottom: 1rem; */
     padding: 0.5rem 0;
 }
 
@@ -166,13 +159,11 @@ main h2 {
     text-align: center;
     max-width: 70%;
     margin: 0 auto;
-    /* padding: 0.5rem; */
     border: #455368 solid 1px;
 }
 
 .column{
     flex: 1 1 100%;
-    /* padding: 0.5rem 0; */
     border-left: #455368 solid 1px;
 }
 
@@ -232,7 +223,6 @@ main h2 {
 .map img {
     display: block;
     max-width: 100%;
-    /* min-width: 50%; */
     margin: 0 auto;
 }
 
