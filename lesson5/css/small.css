@@ -108,9 +108,9 @@ main h2 {
 }
 
 .summary {
-    background: radial-gradient(#455368, #000);
+    background-color: #000;
     border: #fff solid 2px;
-    opacity: 1;
+    opacity: 0.8;
     position: absolute;
     top: 30px;
     left: 30px;
