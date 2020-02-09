@@ -12,8 +12,8 @@
         display: none;
     }
 
-    .forecast{
-        display: flex;
+    .fiveDaysForecast {
+        display: block;
     }
 
     .history img{
