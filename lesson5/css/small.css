@@ -108,10 +108,10 @@ main h2 {
 }
 
 .summary {
+    position: absolute;
     background-color: #000;
     border: #fff solid 2px;
     opacity: 0.9;
-    position: absolute;
     top: 30px;
     left: 30px;
     padding: 1rem;
