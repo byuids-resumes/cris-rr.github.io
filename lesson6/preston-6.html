@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="BYUI CIT 230 - wheater project by Cristhians Ruiz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Cristhians Ruiz Cloudy Zone - Preston Town">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Preston Town Cristhians Ruiz</title>
+</head>
+<body class="pagePreston">
+    <div class="content">
+        <aside class="banner">
+            <p>
+                Saturday = Preston Pancakes in the Park!  
+                9:00 a.m. Saturday at the city park pavilion.
+            </p>
+        </aside>
+        <header>
+            <img class="logo" src="images/weather512.png" alt="cloudy zone logo">
+            <section class="subHeader">
+                <h1>Cloudy Zone</h1>
+                <h3>How cloudy will it be today? </h3>
+            </section>
+        </header>
+        <nav>
+            <ul class="menubar hide">
+                <li class="menu"><a class="menuText" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a class="pageHome" href="#">Home</a></li>
+                <li><a class="pagePreston" href="#">Preston</a></li>
+                <li><a class="pageSoda" href="#">Soda Springs</a></li>
+                <li><a class="pageFish" href="#">Fish Haven</a></li>
+                <li><a class="pageStorm" href="#">Storm Center</a></li>
+                <li><a class="pageGallery" href="#">Gallery</a></li>
+
+            </ul>
+        </nav>
+        <main>
+            <h2>Preston Idaho</h2>
+            <section class="hero">
+                <figure >
+                    <img src="images/sander_weeteling_town.jpg" alt="town image by Sander Weeteling">
+                </figure>
+                
+                <picture>
+                    <source srcset="images/preston_large.jpg" media="(min-width:47em )">
+                    <source srcset="images/preston_medium.jpg" media="(min-width: 37.5em)">
+                    <img src="images/preston_small.jpg" alt="small image for small viewport">
+                </picture>
+                <article class="summary">
+                    <h3>Weather Summary</h3>
+                    <div class="row">
+                        <span class="left">Currently:</span>
+                        <span class="right">Sunny</span>
+                    </div>
+                    <div class="row">
+                        <span class="left">High:</span>
+                        <span class="right"><span id="temp">45</span> °F</span>
+                    </div>
+                    <div class="row">
+                        <span class="left">Wind Chill:</span>
+                        <span class="right"><span id="windchill"></span> °F</span>
+                    </div>
+
+                    <div class="row">
+                        <span class="left">Humidity:</span>
+                        <span class="right">70%</span>
+                    </div>
+
+                    <div class="row">
+                        <span class="left">Wind Speed:</span>
+                        <span class="right"><span id="speed">5</span> mph</span>
+                    </div>
+                </article>
+
+            </section>
+
+
+            <section class="fiveDaysForecast">
+                <h3>5 Days Forecast</h3>
+                <div class="forecast">
+                    <div class="column">
+                        <span class="day">Mon</span>
+                        <img src="images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712.png" alt="Cold now ice image">
+                        <span class="temp">6 °F</span>
+                    </div>
+                    <div class="column">
+                        <span class="day">Tue</span>
+                        <img src="images/iconfinder_winter_season_cold_weather_cloud_rain_rainy_4908723.png" alt="Cold now ice image">
+                        <span class="temp">12 °F</span>
+                    </div>
+                    <div class="column">
+                        <span class="day">Wed</span>
+                        <img src="images/iconfinder_winter_season_cold_weather_cloud_rain_rainy_4908723.png" alt="Cold now ice image">
+                        <span class="temp">13 °F</span>
+                    </div>
+                    <div class="column">
+                        <span class="day">Thu</span>
+                        <img src="images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712.png" alt="Cold now ice image">
+                        <span class="temp">8 °F</span>
+                    </div>
+                    <div class="column">
+                        <span class="day">Fri</span>
+                        <img src="images/iconfinder_Winter_season_cold_snow_ice_cloud_weather_4908712.png" alt="Cold now ice image">
+                        <span class="temp">4 °F</span>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="history">
+                
+                <img src="images/woman-man-and-girl-sitting-on-snow-1620653.jpg" alt="family in the snow by Victoria Boradinova from Pexels">    
+                <h2>What to do when is cold</h2>
+                <h4>by Peter Ipsum</h4>
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet.." This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,</p>
+            </section>
+
+            <section class="contact">
+                <figure class="map">
+                    <img src="images/map.jpg" alt="Preston Idaho map image">
+                </figure>
+                
+                <section class="info">
+                    <div class="address">
+                        <span class="name">Cloudy Zone</span>
+                        <span>&#10016; 30 N 1st E</span>
+                        <span>Preston, ID 83263</span>
+
+                        <span class="phone">&phone; 999.999.9999</span>
+                        <span>&#9993; cloudyzone@cz.com</span>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com" target="_blank"><img src="https://cdn.glitch.com/16f52649-8c7a-4cf5-ae01-60cfaa5fddb3%2Ffacebook.png?v=1570158377713" alt="Facebook Icon"></a>
+                        <a href="https://www.twitter.com" target="_blank"><img src="https://cdn.glitch.com/16f52649-8c7a-4cf5-ae01-60cfaa5fddb3%2Ftwitter.png?v=1570158377793" alt="Twitter Icon"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="https://cdn.glitch.com/16f52649-8c7a-4cf5-ae01-60cfaa5fddb3%2Finstagram.png?v=1570158377749" alt="Instagram Icon"></a>
+                    </div>
+
+                </section>
+            
+
+            </section>
+
+        </main>
+        <footer>
+            <p>&copy; 2020 | Cristhians Ruiz | Lima, Perú | <span><a href="https://www.byui.edu/online">BYUI Online
+                learning</a></span></p>
+            <p>Last updated <span id="lastDate"></span></p>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/winchill.js"></script>
+
+</body>
+</html>
