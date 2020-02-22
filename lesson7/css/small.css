@@ -1,0 +1,135 @@
+body {
+    background-color: #fff;
+    font-family: 'lato', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Quicksand', sans-serif, serif;
+}
+
+header, footer{
+    background-color: #455368;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.subHeader {
+    text-align: center;
+}
+
+.subHeader h1 {
+    margin: 1rem 1rem 0;
+    font-size: 3rem;
+}
+
+.logo {
+    width: 8rem;
+    height: auto;
+    border: #fff solid 5px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+nav {
+    background-color: #93b7be;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menubar li:first-child {
+    display: block;
+}
+
+.menubar li {
+    display: block;
+}
+
+.hide li {
+    display: none;
+}
+
+nav li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #8D8D92;
+    color: #FFF;
+
+}    
+
+body.pageHome a.pageHome, body.pagePreston a.pagePreston,
+body.pageGallery a.pageGallery {
+    background-color:#DC8E54;
+    color: #000;
+    font-weight: bold;
+}
+
+main h2 {
+    text-align: center;
+}
+
+.photos {
+    display: grid;
+    row-gap: 15px;
+    justify-items: center;
+}
+
+.photo {
+    margin: 0;
+    justify-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.photo img[data-src] {
+    filter: blur(0.1em);
+}
+
+.photo img {
+    max-width: 100%; 
+}
+
+.photo figcaption{
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+footer {
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #DC8E54;
+    font-weight: bold;
+}
+
+footer a:visited{
+    color: burlywood;
+}

@@ -13,8 +13,8 @@ const getImage = (img) => {
 }
 
 const imgOptions = {
-    threshold: 0,
-    rootMargin: "0px 0px 30px 0px"
+    threshold: 0.75,
+    rootMargin: "0px 50% 0px 0px"
 };
 
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
