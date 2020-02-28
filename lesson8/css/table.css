@@ -25,6 +25,7 @@ caption {
 thead {
     background-color:  #628ca6;
     color: white;
+    font-weight: bold;
 }
 
 table, th, td {
