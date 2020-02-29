@@ -112,7 +112,7 @@ form fieldset {
 form legend {
     margin: 0 1rem;
     padding: 0 .5rem;
-    color: #DC8E54;
+    color: #455368;
     font-weight: bold;
     font-size: 1.2rem;
 
@@ -121,7 +121,7 @@ form legend {
 .top{
     display: block;
     padding-top: 1rem;
-    color: #455368; 
+    color: #000; 
 }
 
 .top input, .top select, textarea {
@@ -133,6 +133,7 @@ form legend {
     max-width: 20rem;
     padding: .75rem;
     background-color: rgba(241, 241, 241, 0.555);
+    color: #455368; 
 }
 
 .left {
@@ -156,6 +157,7 @@ form legend {
     text-align: center;
     margin-top: -1rem;
     padding: 0;
+    color: #455368;
 }
 
 .button {
