@@ -33,6 +33,12 @@ header {
     font-size: 3rem;
 }
 
+.subHeader h2 {
+    font-size: 1.17em;
+    font-weight: bold;
+    font-family: 'lato', sans-serif;
+}
+
 .logo {
     width: 8rem;
     height: auto;
