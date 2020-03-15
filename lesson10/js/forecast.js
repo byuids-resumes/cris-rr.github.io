@@ -4,7 +4,7 @@ fetch(apiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         const forecastDays = jsObject.list.filter(x => x.dt_txt.includes('18:00:00'));
-        console.log(forecastDays);
+        //console.log(forecastDays);
         for (let i = 0; i < forecastDays.length; i++) {
             const imagesrc = `https://openweathermap.org/img/w/${forecastDays[i].weather[0].icon}.png`
             document.getElementById(`day${i+1}`).textContent = getDayName(i+1);
