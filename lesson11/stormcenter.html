@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Cristhians Ruiz Cloudy Zone - Storm Center Page">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Storm Center Page Cristhians Ruiz</title>
+</head>
+
+<body class="pageStorm">
+    <div class="content">
+        <header>
+            <img class="logo" src="images/weather512.png" alt="cloudy zone logo">
+            <section class="subHeader">
+                <h1>Cloudy Zone</h1>
+                <div class="moto">How cloudy will it be today?</div>
+            </section>
+        </header>
+        <nav>
+            <ul class="menubar hide">
+                <li class="menu"><a class="menuText" href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a class="pageHome" href="index.html">Home</a></li>
+                <li><a class="pagePreston" href="preston.html">Preston</a></li>
+                <li><a class="pageSoda" href="#">Soda Springs</a></li>
+                <li><a class="pageFish" href="#">Fish Haven</a></li>
+                <li><a class="pageStorm" href="#">Storm Center</a></li>
+                <li><a class="pageGallery" href="gallery.html">Gallery</a></li>
+
+            </ul>
+        </nav>
+        <main>
+            <!-- <h1>Storm Center</h1> -->
+            <section>
+                <h2 class="stormHeading">Storm Center - New Report:</h2>
+                <form method="get" action="thanks.html">
+                    <fieldset>
+                        <legend>Personal details</legend>
+                        <label class="top">
+                            Full name* <input type="text" name="fullName" id="fullName" required pattern="[A-Za-z ]{5,}">
+                        </label>
+                        <label class="top">
+                            Email <input type="email" name="email" id="email" placeholder="user@email.com">
+                        </label>
+                        <label class="top">
+                            Phone number* <input type="tel" name="phone" id="phone" required>
+                        </label>
+                        <label class="top">
+                            Zip code* <input type="number" name="zip" id="zip" required>
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Storm details</legend>
+                        <label class="top">
+                            Storm date <input type="date" name="stormDate" id="stormDate">
+                        </label>
+                        <label class="top">
+                            Storm type <input list="stormTypes" name="stormType" id="stormType">
+                            <datalist id="stormTypes">
+                                <option value="Flash Flood"></option>
+                                <option value="Hail"></option>
+                                <option value="Hurricane"></option>
+                                <option value="Thunderstorm"></option>
+                                <option value="Tornado"></option>
+                            </datalist>
+                        </label>
+                        <label class="top">
+                            Storm severity <input type="range" name="stormSeverity" id="stormSeverity" min="1" max="10" value="5"
+                                step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                                <span id="ratingvalue">5</span>
+                            <datalist id="tickmarks">
+                                <option value="0"></option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                                <option value="6"></option>
+                                <option value="7"></option>
+                                <option value="8"></option>
+                                <option value="9"></option>
+                                <option value="10"></option>
+                            </datalist>
+                        </label>
+                        <label class="top">
+                            Storm region 
+                            <select name="stormRegion" id="stormRegion">
+                                <option value="" selected disabled>Please Select</option>
+                                <option value="Preston">Preston</option>
+                                <option value="Soda Springs">Soda Springs</option>
+                                <option value="Fish Haven">Fish Haven</option>
+                            </select>
+                        </label>
+
+                        <div class="top">User in-danger level</div>
+                        <label class="radioleft"><input type="radio" name="danger"> Yes</label>
+                        <label class="radioleft"><input type="radio" name="danger"> Maybe</label>
+                        <label class="radioleft"><input type="radio" name="danger"> No</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Aditional information / comments</legend>
+                        <label class="top"> Entry any comments or extra information 
+                            <textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+                        </label>
+                    </fieldset>
+                    <input type="submit" value="Add my storm report" class="button">
+                </form>
+            </section>
+
+
+
+        </main>
+        <footer>
+            <p>&copy; 2020 | Cristhians Ruiz | Lima, Perú | <span><a href="https://www.byui.edu/online">BYUI Online
+                        learning</a></span></p>
+            <p>Last updated <span id="lastDate"></span></p>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

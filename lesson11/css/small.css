@@ -1,0 +1,488 @@
+body {
+    background-color: #fff;
+    font-family: 'lato', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Quicksand', sans-serif, serif;
+}
+
+/*Preston ---------------*/
+.banner {
+    background-color: #DC8E54;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.2rem 1.8rem;
+    font-size: 1.1rem;
+}
+/*------------------------*/
+
+header, footer{
+    background-color: #455368;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.subHeader {
+    text-align: center;
+}
+
+.subHeader h1 {
+    margin: 1rem 1rem 0;
+    font-size: 3rem;
+}
+
+.moto {
+    font-size: 1.17rem;
+    font-weight: bold;
+    font-family: 'lato', sans-serif;
+    margin: 1.1rem;
+}
+
+.logo {
+    width: 8rem;
+    height: auto;
+    border: #fff solid 5px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+nav {
+    background-color: #93b7be;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menubar li:first-child {
+    display: block;
+}
+
+.menubar li {
+    display: block;
+}
+
+.hide li {
+    display: none;
+}
+
+nav li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 0.75rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #8D8D92;
+    color: #FFF;
+
+}    
+
+body.pageHome a.pageHome, body.pagePreston a.pagePreston,
+body.pageGallery a.pageGallery, body.pageStorm a.pageStorm {
+    background-color:#DC8E54;
+    color: #000;
+    font-weight: bold;
+}
+
+main h2 {
+    text-align: center;
+}
+/*Home Page-----------------*/
+
+.towns {
+    padding: 0.5rem;
+    margin: 0.5rem;
+    display: grid;
+    justify-content: center;
+    row-gap: 0.8rem;
+}
+
+.town {
+    background-color: #93b7be;
+    display: grid;
+    border: 5px solid #455368;
+}
+
+.data {
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.data h2{
+    
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.data h3 {
+    margin-top: .4rem;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.town img {
+    width: 100%;
+    height: auto;
+}
+
+.wireframes {
+    padding-top: 1rem;
+    margin:0;
+}
+
+.wireframes h2 {
+    margin: 0;
+}
+
+.sketches {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.sketches a {
+    margin-top:0;
+    text-decoration: none;
+    padding: 0.5rem 1rem 1rem;
+    flex-grow: 1;
+    text-align: center;
+    
+}
+
+/* Preston ----------------- */ 
+.hero {
+    padding: 0.5rem;
+    position: relative;
+}
+
+.hero figure {
+    /* display: none; */
+    margin: 0 auto;
+}
+
+.hero picture {
+    display: none;
+    margin: 0 auto;
+}
+
+.hero figure img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 300px;
+}
+
+.summary {
+    position: absolute;
+    background-color: #000;
+    border: #fff solid 2px;
+    opacity: 0.9;
+    top: 30px;
+    left: 30px;
+    padding: 1rem;
+    color: #FFF;
+    box-shadow: 10px 10px 25px rgb(29, 31, 32);
+    min-width: 235px;
+    
+}
+
+.summary h3 {
+    text-align: center;
+    margin: 0 0 0.5rem;
+    border-bottom: 1px solid #FFF;
+}
+
+.row {
+    display: flex;
+    padding: 0.2rem;    
+}
+
+.left {
+    text-align: right;
+    flex: 1 1 100%;
+    padding-right: 0.5rem;
+}
+
+.right {
+    text-align: left;
+    flex: 1 1 100%;
+}
+
+.fiveDaysForecast {
+    text-align: center;
+    padding: 0.5rem 0;
+    display: none;
+}
+
+.fiveDaysForecast h3 {
+    margin-top: 0;
+}
+
+.forecast {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+    border: #455368 solid 1px;
+    background-color: #93b7be;
+}
+
+.column{
+    flex: 1 1 100%;
+    border-left: #455368 solid 1px;
+}
+
+.forecast div:first-child {
+    border-left: 0;
+}
+
+.day {
+    background-color: #DC8E54;
+    display: block;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.column img {
+    padding-top: 0.5rem;
+    width: 35%;
+}
+
+.temp {
+    display: block;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+
+.history {
+    margin: 1rem;
+    background-color: #93b7be;
+    padding: 1rem;
+    text-align: left;
+}
+
+.history img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.history h2 {
+    font-weight: bold;
+    text-align: left;
+}
+
+.contact {
+    clear: both;
+    margin: 1rem;
+    background-color: #93b7be;
+    padding: 1rem;
+}
+
+.map {
+    display: none;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.map img {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.info span {
+    display: block;
+    padding: 1px 0;
+
+}
+
+.name {
+    font-weight: bold;
+}
+
+.phone {
+    margin-top: 1rem;
+}
+
+.social {
+    padding: 1.5rem 0;
+}
+
+
+.social a img {
+    max-width: 70%;
+}
+
+.hideTitle {
+    display: none;
+}
+
+/*Storm center---------------*/
+.pageStorm section {
+    padding: 0.5rem;
+}
+
+.stormHeading {
+    padding-top: 1rem;
+}
+
+.message {
+    text-align: center;
+    font-weight: normal;
+}
+
+/* FORM -------------------*/
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #DC8E54;
+    border-radius: 10px;
+    padding: .5rem 2% 1rem 2%;
+}
+
+form legend {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    color: #455368;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}
+
+.top{
+    display: block;
+    padding-top: 1rem;
+    color: #000; 
+}
+
+.top input, .top select, textarea {
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #8D8D92;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 20rem;
+    padding: .75rem;
+    background-color: rgba(241, 241, 241, 0.555);
+    color: #455368; 
+}
+
+.radioleft {
+    display: block;
+    padding: .75rem;
+    color: #455368;
+}
+
+.top input:required {
+    border-left: red solid 6px;
+}
+
+.top input:required:valid {
+    border-left: rgb(0, 140, 255) solid 6px;
+}
+
+#ratingvalue {
+    display: block;
+    width: 100%;
+    max-width: 20rem;
+    text-align: center;
+    margin-top: -1rem;
+    padding: 0;
+    color: #455368;
+}
+
+.button {
+    border: none;
+    background-color: #DC8E54;
+    color: black;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    font-weight: bold;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Gallery ------------------ */
+.photos {
+    display: grid;
+    row-gap: 15px;
+    justify-items: center;
+}
+
+.photo {
+    margin: 0;
+    justify-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.photo img[data-src] {
+    filter: blur(0.1em);
+}
+
+.photo img {
+    max-width: 100%; 
+}
+
+.photo figcaption{
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+/* Footer ------------------ */
+footer {
+    padding: 10px;
+    margin: 10px 0px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #fff;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #DC8E54;
+    font-weight: bold;
+}
+
+footer a:visited{
+    color: burlywood;
+}

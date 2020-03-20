@@ -1,0 +1,76 @@
+@media only screen and (min-width: 47em) {
+    .menubar {
+        display: flex;
+    }
+    
+    .menubar li {
+            display: block;
+            flex: 1 1 100%;
+    }
+    
+    .menubar li:first-child {
+        display: none;
+    }
+    /*Home-----------------------*/
+    .town {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .town:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .data {
+        flex: 2;
+    }
+
+    .town img {
+        width: 70%;
+        height: auto;
+        flex: 1;
+    }
+
+    /*Preston -------------------*/
+    .fiveDaysForecast {
+        display: block;
+    }
+
+    .history img{
+        max-width: 400px;
+        object-fit: cover;
+        float: right;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        padding: 0.5rem;
+    }
+
+    .map {
+        display: block;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
+
+    .map {
+        flex: 1 1 100%;
+    }
+
+    .info {
+        flex: 1 1 100%
+    }
+
+    /*Gallery --------------------*/
+    .photos {
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+        max-width: 755px;
+    }
+
+}
