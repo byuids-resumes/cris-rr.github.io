@@ -96,6 +96,7 @@ nav a:hover {
 }    
 
 body.pageHome a.pageHome, body.pagePreston a.pagePreston,
+body.pageFish a.pageFish, body.pageSoda a.pageSoda,
 body.pageGallery a.pageGallery, body.pageStorm a.pageStorm {
     background-color:#DC8E54;
     color: #000;
@@ -292,6 +293,31 @@ main h2 {
 .history h2 {
     font-weight: bold;
     text-align: left;
+}
+
+.remarks {
+    font-weight: bold;
+}
+
+.upcoming {
+    
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+#events {
+    margin: 1rem;
+    background-color: #93b7be;
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: #DC8E54 5px solid;
+}
+
+.event {
+    margin: 0.2rem;
 }
 
 .contact {

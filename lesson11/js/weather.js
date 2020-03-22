@@ -1,4 +1,21 @@
-const forecastURL = 'https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&APPID=f1fa408b88505a26227247e1a8767c30';
+function getCodeTown() {
+    let path = window.location.pathname; 
+    let town = path.substring(path.lastIndexOf('/')+1);
+    town = town.substring(0, town.length-5);
+    town = town.toLowerCase();
+    let id = ""
+    if (town.includes('preston')) {
+        id = 'id=5604473';
+    } else if (town.includes('fish')) {
+        id = 'zip=83287';        
+    } else if (town.includes('soda')) {
+        id = 'id=5607916'
+    }
+
+    return id;
+}
+
+const forecastURL = `https://api.openweathermap.org/data/2.5/weather?${getCodeTown()}&units=imperial&APPID=f1fa408b88505a26227247e1a8767c30`;
 
 fetch(forecastURL)
     .then((response) => response.json())
