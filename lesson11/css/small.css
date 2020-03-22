@@ -148,6 +148,7 @@ main h2 {
 }
 
 .wireframes {
+    display: none;
     padding-top: 1rem;
     margin:0;
 }
