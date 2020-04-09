@@ -583,31 +583,31 @@ footer a {
   color: #000;
 }
 
-.form {
+.form, .formPrice {
   max-width: 400px;
   text-align: center;
   margin: 0 auto;
 }
-.form form fieldset {
+.form form fieldset, .formPrice form fieldset {
   text-align: left;
   margin: 2rem 0;
   border: 1px solid #aa8143;
   border-radius: 10px;
   padding: .5rem 4% 1rem 10%;
 }
-.form form legend {
+.form form legend, .formPrice form legend {
   margin: 0 1rem;
   padding: 0 .5rem;
   color: #384d48;
   font-weight: bold;
   font-size: 1.2rem;
 }
-.form .top {
+.form .top, .formPrice .top {
   display: block;
   padding-top: 1rem;
   color: #000;
 }
-.form .top input, .form .top select, .form textarea {
+.form .top input, .form .top select, .form textarea, .formPrice .top input, .formPrice .top select, .formPrice textarea {
   display: block;
   font-size: 1rem;
   border: solid 1px #8D8D92;
@@ -618,13 +618,13 @@ footer a {
   background-color: rgba(241, 241, 241, 0.555);
   color: #455368;
 }
-.form .top input:required {
+.form .top input:required, .formPrice .top input:required {
   border-left: red solid 6px;
 }
-.form .top input:required:valid {
+.form .top input:required:valid, .formPrice .top input:required:valid {
   border-left: #008cff solid 6px;
 }
-.form .button {
+.form .button, .formPrice .button {
   border: none;
   background-color: #4287b5;
   color: black;
@@ -634,6 +634,17 @@ footer a {
   width: 96%;
   max-width: 20rem;
   font-weight: bold;
+}
+
+.formPrice h2 {
+  padding: 0;
+  margin-top: 3rem;
+}
+.formPrice form fieldset {
+  margin-top: 0;
+}
+.formPrice form fieldset legend {
+  text-align: center;
 }
 
 .info {
@@ -666,6 +677,35 @@ footer a {
 }
 .map iframe {
   margin: 0 auto;
+}
+
+#reservation {
+  margin: 0 auto;
+  width: 80%;
+  border-collapse: collapse;
+  font-weight: 700;
+}
+#reservation td {
+  border: #000 1px solid;
+  padding: 10px;
+}
+#reservation th:nth-child(1), #reservation th:nth-child(2), #reservation th:nth-child(3) {
+  color: #000;
+}
+#reservation th {
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: #000 1px solid;
+  padding: 5px;
+}
+#reservation td:nth-child(2) {
+  background-color: #499b73;
+}
+#reservation td:nth-child(1), #reservation td:nth-child(3) {
+  background-color: #FFF;
+}
+#reservation tr:nth-child(1) {
+  background-color: #aa8143;
 }
 
 @media only screen and (min-width: 560px) {
@@ -710,10 +750,10 @@ footer a {
     max-width: 400px;
   }
 
-  .form {
+  .form .formPrice {
     max-width: 600px;
   }
-  .form form fieldset {
+  .form .formPrice form fieldset {
     padding: .5rem 4% 1rem 25%;
   }
 }

@@ -167,9 +167,7 @@ footer {
 
 
 //-----contact----------
-
-
-.form {
+.form, .formPrice{
     max-width: 400px;
     text-align: center;
     margin: 0 auto;
@@ -230,6 +228,22 @@ footer {
 
 }
 
+.formPrice {
+    h2 {
+        padding: 0;
+        margin-top: 3rem;
+        
+    }
+
+    form fieldset {
+        margin-top: 0;
+    }
+
+    form fieldset legend {
+        text-align: center;
+    }
+}
+
 .info {
     display: flex;
     flex-direction: column;
@@ -270,5 +284,46 @@ footer {
         margin: 0 auto;
     }
 }
+
+//----------reservation-----------
+
+#reservation {
+    margin: 0 auto;    
+    width: 80%;
+    border-collapse: collapse;
+    font-weight: $heavyWeight;
+
+    td {
+        border: $colorBlack 1px solid;
+        padding: 10px;
+    }
+
+    th:nth-child(1), th:nth-child(2), th:nth-child(3) {
+        color: $colorBlack;
+        
+    }
+
+    th{
+        font-weight: bold;
+        font-size: 1.1rem;
+        border: $colorBlack 1px solid;
+        padding: 5px;
+    }
+
+    td:nth-child(2) {
+        background-color: $headerBackground;
+    }
+    td:nth-child(1), td:nth-child(3) {
+        background-color: $colorWhite;
+    }
+
+    tr:nth-child(1) {
+        background-color: $navActiveBackground;
+    }
+    
+}
+
+
+
 
 
