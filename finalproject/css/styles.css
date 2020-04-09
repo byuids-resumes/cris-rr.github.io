@@ -634,6 +634,7 @@ footer a {
   width: 96%;
   max-width: 20rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .formPrice h2 {
@@ -708,6 +709,43 @@ footer a {
   background-color: #aa8143;
 }
 
+.choices {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: stretch;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+.choices h2 {
+  display: none;
+}
+
+.adventureChoice {
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem;
+  border: #aa8143 5px solid;
+  border-radius: 0.5rem;
+}
+.adventureChoice p {
+  text-align: left;
+  padding-left: 0.5rem;
+  line-height: 1rem;
+}
+.adventureChoice figure {
+  margin: 0;
+}
+.adventureChoice figure img {
+  width: 100%;
+  height: auto;
+}
+.adventureChoice ul li {
+  text-align: left;
+  line-height: 1.5rem;
+}
+
 @media only screen and (min-width: 560px) {
   header .subHeader h1 {
     font-size: 2rem;
@@ -755,6 +793,20 @@ footer a {
   }
   .form .formPrice form fieldset {
     padding: .5rem 4% 1rem 25%;
+  }
+
+  .choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .adventureChoice {
+    max-width: 400px;
+  }
+
+  .last {
+    grid-column: span 2;
   }
 }
 /* end of media query */
@@ -835,6 +887,20 @@ footer a {
     flex: 1 1 100%;
     max-width: 420px;
     margin: 0 1rem;
+  }
+
+  .choices {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .adventureChoice {
+    min-width: 300px;
+  }
+
+  .last {
+    grid-column: span 1;
   }
 }
 /* end of media query */

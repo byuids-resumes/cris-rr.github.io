@@ -88,5 +88,18 @@ main {
     margin: 0 1rem;
 }
 
+//---------activities----------
+.choices {
+    display: grid;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;    
+}
 
+.adventureChoice {
+    min-width: 300px;
+}
+
+.last {
+    grid-column: span 1;
+}
 

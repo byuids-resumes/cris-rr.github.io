@@ -224,6 +224,7 @@ footer {
         width: 96%;
         max-width: 20rem;
         font-weight: bold;
+        cursor: pointer;
     }
 
 }
@@ -323,7 +324,49 @@ footer {
     
 }
 
+//------activities----------------
+.choices {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items:stretch;    
+    // border: 1px solid red;
+    h2 {
+        display: none;
+    }
+    row-gap: 10px;
+    column-gap: 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
 
+.adventureChoice {
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem;
+    border: $navActiveBackground 5px solid;
+    border-radius: 0.5rem;
+    // min-width: 300px;
+    
+    p {
+        text-align: left;
+        padding-left: 0.5rem;
+        line-height: 1rem;
+    }
+
+    figure {
+        margin: 0;
+    }
+
+    figure img {
+        width: 100%;
+        height: auto;
+    }
+
+    ul li {
+        text-align: left;
+        line-height: 1.5rem;
+    }
+}
 
 
 

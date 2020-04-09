@@ -25,7 +25,7 @@ nav {
 
 .landing {
     margin-top: 10px;
-    // margin-bottom: 20px;
+
     position: relative;
 }
 
@@ -53,5 +53,25 @@ nav {
     form fieldset {
         padding: .5rem 4% 1rem 25%;
     }
+}
+
+//-------activities -----------
+.activities {
+
+}
+.choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+}
+
+.adventureChoice {
+    max-width: 400px;
+
+}
+
+.last {
+    grid-column: span 2;
 }
 
