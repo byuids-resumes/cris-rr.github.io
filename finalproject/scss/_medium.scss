@@ -1,0 +1,48 @@
+header {
+    .subHeader h1 {
+        font-size: 2rem;
+    }
+
+    .moto {
+        font-size: 1.2rem;
+    }
+}
+
+nav {
+    .menubar {
+        display: flex;
+    }
+
+    .menubar li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .menubar li:first-child {
+        display: none;
+    }
+}
+
+.landing {
+    margin-top: 10px;
+    // margin-bottom: 20px;
+    position: relative;
+}
+
+.summary {
+    position: absolute;
+    background-color: $navBackground;
+    border: #fff solid 2px;
+    opacity: 0.8;
+    top: 20px;
+    left: 5px;
+    padding: 1rem;
+    color: #FFF;
+    box-shadow: 10px 10px 25px rgb(29, 31, 32);
+    max-width: 200px;
+}    
+
+.callToAction {
+    margin-top: 15px;
+    max-width: 400px;
+}
