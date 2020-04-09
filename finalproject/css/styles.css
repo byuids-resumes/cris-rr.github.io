@@ -746,6 +746,18 @@ footer a {
   line-height: 1.5rem;
 }
 
+.employees {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.employees section {
+  text-align: center;
+  margin: 0;
+  padding: 0.5rem;
+  border: #aa8143 5px solid;
+  border-radius: 0.5rem;
+}
+
 @media only screen and (min-width: 560px) {
   header .subHeader h1 {
     font-size: 2rem;
@@ -807,6 +819,11 @@ footer a {
 
   .last {
     grid-column: span 2;
+  }
+
+  .employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 /* end of media query */
@@ -901,6 +918,8 @@ footer a {
 
   .last {
     grid-column: span 1;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 /* end of media query */

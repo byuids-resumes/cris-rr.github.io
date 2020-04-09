@@ -75,3 +75,9 @@ nav {
     grid-column: span 2;
 }
 
+//---------- guides ------------
+.employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+

@@ -24,7 +24,7 @@ fetch(requestURL)
             let fullname = `${employee.name} ${employee.lastname}`;
 
             name.textContent = fullname;
-            image.setAttribute('src', employee.imageurl);
+            image.setAttribute('src', employee.imgurl);
             image.setAttribute('alt', fullname);
             experience.textContent = `Years of experience: ${employee.experience}`; 
             level.textContent = `Certificate Level: ${employee.level}`;

@@ -101,5 +101,8 @@ main {
 
 .last {
     grid-column: span 1;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
+//--------------- guides -----------
