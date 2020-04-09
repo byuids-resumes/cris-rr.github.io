@@ -584,31 +584,30 @@ footer a {
 }
 
 .form {
-  text-align: left;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
 }
-
-form fieldset {
+.form form fieldset {
+  text-align: left;
   margin: 2rem 0;
   border: 1px solid #aa8143;
   border-radius: 10px;
   padding: .5rem 2% 1rem 2%;
 }
-
-form legend {
+.form form legend {
   margin: 0 1rem;
   padding: 0 .5rem;
   color: #384d48;
   font-weight: bold;
   font-size: 1.2rem;
 }
-
-.top {
+.form .top {
   display: block;
   padding-top: 1rem;
   color: #000;
 }
-
-.top input, .top select, textarea {
+.form .top input, .form .top select, .form textarea {
   display: block;
   font-size: 1rem;
   border: solid 1px #8D8D92;
@@ -619,16 +618,13 @@ form legend {
   background-color: rgba(241, 241, 241, 0.555);
   color: #455368;
 }
-
-.top input:required {
+.form .top input:required {
   border-left: red solid 6px;
 }
-
-.top input:required:valid {
+.form .top input:required:valid {
   border-left: #008cff solid 6px;
 }
-
-.button {
+.form .button {
   border: none;
   background-color: #4287b5;
   color: black;
