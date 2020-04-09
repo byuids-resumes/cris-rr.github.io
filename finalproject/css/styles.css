@@ -709,6 +709,13 @@ footer a {
     margin-top: 15px;
     max-width: 400px;
   }
+
+  .form {
+    max-width: 600px;
+  }
+  .form form fieldset {
+    padding: .5rem 4% 1rem 25%;
+  }
 }
 /* end of media query */
 @media only screen and (min-width: 960px) {
@@ -767,6 +774,27 @@ footer a {
   .landing .callToAction {
     order: 3;
     margin-right: 0;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .form {
+    margin: 0 1rem;
+    flex: 1 1 100%;
+    max-width: 400px;
+  }
+  .form form fieldset {
+    padding: .5rem 4% 1rem 10%;
+  }
+
+  .locAndInfo {
+    flex: 1 1 100%;
+    max-width: 420px;
+    margin: 0 1rem;
   }
 }
 /* end of media query */

@@ -44,9 +44,7 @@ main {
         .row {
             display: block;
             flex: 1 1 100%;
-            // margin: 0;
             padding-top: 1rem;
-            // border: 1px solid blue;
         }
 
         .left, .right{
@@ -69,7 +67,26 @@ main {
 }
 
 //---- Contact ------------
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
+.form {
+    margin: 0 1rem;
+    flex: 1 1 100%;
+    max-width: 400px;
+    form fieldset {
+        padding: .5rem 4% 1rem 10%;
+    }
+}
+
+.locAndInfo {
+    flex: 1 1 100%;
+    max-width: 420px;
+    margin: 0 1rem;
+}
 
 
 
