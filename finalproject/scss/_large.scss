@@ -102,7 +102,20 @@ main {
 .last {
     grid-column: span 1;
     column-gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 //--------------- guides -----------
+
+.employees {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+
+    section {
+        max-width: 300px;
+    }
+
+    section:last-child {
+        grid-column: span 1;
+    }
+}

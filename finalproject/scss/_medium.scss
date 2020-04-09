@@ -56,9 +56,6 @@ nav {
 }
 
 //-------activities -----------
-.activities {
-
-}
 .choices {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -79,5 +76,16 @@ nav {
 .employees {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+    section {
+        max-width: 400px;
+    }
+
+    section:last-child {
+        grid-column: span 2;
+    }
 }
+
+
 
