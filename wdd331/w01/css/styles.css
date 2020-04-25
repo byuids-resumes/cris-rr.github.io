@@ -1,0 +1,132 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* body rules */
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: "Lora", helvetica;
+}
+
+a, a:visited {
+  color: #6495ED;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #DEB887;
+  text-decoration: none;
+}
+
+header {
+  background-color: #6495ED;
+  margin-top: 0;
+  padding: 2rem;
+}
+header h1 {
+  text-align: end;
+  margin: 0;
+  padding: 1rem 0;
+  color: #FAEBD7;
+}
+header ul {
+  margin: 0;
+}
+header ul li {
+  padding: 0.3rem 0;
+  text-align: end;
+  list-style: none;
+}
+header a, header a:visited, header nav li a, header nav li a:visited {
+  color: #FAEBD7;
+  text-decoration: none;
+}
+header a:hover, header nav li a:hover {
+  color: white;
+  text-decoration: underline;
+}
+header a:active, header nav li a:active {
+  color: #DEB887;
+  text-decoration: none;
+}
+
+main {
+  background-color: #FAEBD7;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+main article {
+  background-color: white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+main article h2 a, main article h2 a:visited {
+  color: black;
+  text-decoration: none;
+}
+main article h2 a:hover {
+  color: #6495ED;
+  text-decoration: underline;
+}
+main article h2 a:active {
+  color: #DEB887;
+  text-decoration: none;
+}
+main article section {
+  margin: 0 auto;
+  padding-top: 0.5rem;
+}
+main article section h2 {
+  margin: 0;
+}
+main article:last-child {
+  margin-bottom: 0;
+}
+main figure {
+  text-align: center;
+  padding: 1rem;
+}
+main img {
+  width: 100%;
+}
+
+/* end of media query */
+@media only screen and (min-width: 760px) {
+  body {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  body > div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  header {
+    min-width: 250px;
+  }
+
+  main {
+    padding: 2rem 4rem;
+  }
+}
+/* end of media query */
